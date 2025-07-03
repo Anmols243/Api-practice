@@ -9,4 +9,4 @@ for data in response.json()['items']:
         print(data["link"])
     else:
         print("Skipped")
-        print()
+    print()
