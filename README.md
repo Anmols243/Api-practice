@@ -1,2 +1,2 @@
 #Api-practice
-A repo for practicing apis
+just a repo for learning 
