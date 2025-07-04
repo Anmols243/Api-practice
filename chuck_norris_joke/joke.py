@@ -1,6 +1,15 @@
 import requests
 import json
 
-response = requests.get('https://api.chucknorris.io/jokes/random')
+try:
+    response = requests.get('https://api.chucknorris.io/jokes/random')
+    response.raise_for_status()
+    joke = response.json()['value']
 
-print(response.json()["value"])
+except Exception as e:
+    print(e)
+    
+else:
+    print(joke)
+    
+    
